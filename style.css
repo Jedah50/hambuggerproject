@@ -1,0 +1,133 @@
+header {
+        background-color: aqua;
+        /* background-image:url('JPH_5411.jpg'); */
+        /* background-image:url('DSC_0327.jpg'); */
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAhkAAABeCAMAAAC5BvZEAAAANlBMVEUyQlJSYnJAT19hcYBca3svP09NXW00RFQ3R1dkdIM9TV0xQlE6SVlJWGgwQFE2RlVYaHdFVWT12aMHAAAEP0lEQVR4nO3c63KbMBBAYUiCIDaOm/d/2YLERYjdVdpOEDTnTH9kJsQX9HWFXadVRcVytVA3fOP26hu/7F6EbuNP9/7L/l5Vza9XoUcz3pI/6Dkc00t35u+tXW6zqdcfL3hefnqtCMMvVuNptJUCY6Ixfq+vRhjvkox3N9Nox1uU72yh4W+ofkfGCVJgBBq9CWOZGgaMlYYFY6YRJkZ8QwXPzA9PXappaqhbSURj2CV0GDONVt1KIhpVCgMZhdK2knWxKhPGRMOEMdMYhot1Z9O9JTCQUabWXKppsUwYMw0LxkzDhhHuLYWBjDLZI2OS0doyxmuMqnmYMl79Qfolje/hj+mTnyx1an585mK1/pC7SSOseYZGP4yM8Y91b4+w41QdMs6RsVjtdIhFw8P4rGwaA4zmxa+8fm/+271/IYSMc6QuVrscotPwL1dd7e4WjRHG7e3NpBFg+Pc8PjpknCNlsdroEI3GBKOuxytMjcYEw6Qxw9jTKHNOyCcuVrs5RKaxwKiNqbHACDTEa40VhqcRbyglTgjNCYvVJodINPr4Z7WpEcFQp0YMI50ah58MitstVgpDohFNDJ3GBoZCYwsjoXH0qaBtLgdjTyOBIW8oCQxxQ0lhbDeUY88D7XI5GCmNEcbHdon3NHYwAo27M2FsaBx5EkjK5WBsaQgw9jQEGLsNRYIRbyjHnQFScjkYVfRG+W4rka41RBgJDRlGROOgZ09GLgtjmRoKjO3UUGBsrjU0GOuGcsxzJzOXgzHT2Lxc1aaGCiOaGjqMZWoc8Lwpm8vBCDTUiRFPDQPGQsOCMdP4/mdNX8jlYIw0TBjz1LhZMCYanyaMQKP/7qdMX6r56nHWP6f7qVGZMCYalQkjXGvQpbI/guP8MS8WjIGGP8iEAY3L1Zkw6tp/Yvhhy6j9Ld1sGV3Z50l/nE1j+qjvpwlj2k1MGsC4XhaNeT0tGjOM6m7Q8L/QUOgJ0t+mfw58XUt9Q6mjS12VxnhDz/r4p0b/lkYj/kuuTY168xpIoeF/M6lGxvWSN5Tn5hiZRp28OBZphImBjCsm0UgvC6QNpf5Ib0mgMcNAxhXbbyjP3TF7GnsYAo0FBjIuWTo19jD2G0q6lfjSVygrDGRcsy4LI6UhwqiSqTFdfCLjwsUbivbWQ7yhaDA2NKKJgYzL1mcmxthKQ4cR0YgnBjKuW5eFsW4oFoyFxmZiIOPCdeZWEgpTw4Yx0dhODGRcuT4LI9DIwfA0komBjEvXm1tJqHnkYQw00omBjP+/5qufF0v+h6hvfVB0odJ3z0o/HjpJu0+Yln5AdJocMkjOIYPkHDJIziGDxOLL0NKPhc6VQwbJOWSQnEMGic3XGqUfB50vhwySc8ggMb+hlH4QdMocMkjOIYPkXOkHQERERERERERERERERERERERERERERERERERERERERERERERERHTGfgNCQTEAUce3WAAAAABJRU5ErkJggg==);
+        background-size: cover;
+        width:100%;
+        height: 100px;
+        background-size: 100% 100%;
+        box-sizing: border-box;
+    display: block;}
+
+            .list {
+                clear: both;
+                max-height: 0;
+                transition: max-height .2s ease-out;
+                               }
+
+    ul {/* display: none; */
+        float:right;
+        overflow: hidden;
+        /* background-color: white; */
+        
+                     }
+
+    li {padding: 10px;
+    display: block;
+list-style: none;
+color: grey;
+background-color: white;
+/* margin-bottom: 5px; */
+border: 1px solid black;
+}
+
+H2 { position: absolute;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-top: 10px;
+    padding-left: 20px;
+    color: white;
+}
+
+
+        .hambugger {                
+                width: 70px;
+             padding-top: 30px;
+             margin-left: 90%;
+             /* background-color: hotpink; */
+              }
+
+        .line {width:40px;
+                height: 5px;
+                margin-left: 0px;
+                background-color: white;
+                margin-bottom: 5px;
+        }   
+
+              
+
+                  .menu-icon {
+                    cursor: pointer;
+                    display: inline-block;
+                    float: right;
+                    padding: 30px 80px 30px 0px;                    
+                    position: relative;
+                    user-select: none;
+                    /* background-color: brown; */
+                                                }
+
+                  .menu-btn {display: none;}
+
+                  .container .menu-btn:checked ~ .list {
+                    max-height: 240px;
+                    /* background-color: coral; */
+                    /* color: darksalmon; */
+                  }
+
+                  .menu-btn:checked ~ .menu-icon {
+                    background: transparent;
+                    /* background-color: darkgoldenrod; */
+                  }
+                 
+                 
+                .mid { width: 100%;
+                        height:700px;
+                        background-size: cover;
+                  /* background-image:url('JPH_5411.jpg'); */
+                       background-image:url('DSC_0327.jpg');
+                }
+
+                  @media (min-width: 800px) {
+
+                    .hambugger { 
+                            display: none; }
+        
+                          
+                            ul {color: darkorchid;
+                                color: floralwhite;
+                                list-style: none;
+                                display: flex;
+                                float:right;
+                                background-color: transparent;
+                                }
+                        
+                            li {color: white;
+                                float:right;
+                                border: transparent;
+                                margin-top: 10px;
+                                background-color: transparent;
+                                }
+
+            
+                                .menu-icon {
+                                    cursor: pointer;
+                                    float: right;
+                                    padding: 28px 20px;
+                                    position: relative;
+                                    user-select: none;
+                                    background-color: brown;
+                                    display: none;
+                                  }
+
+                                  .list {display: flex;
+                                    clear: none;
+                                    max-height: none;
+                                    transition: max-height .2s ease-out;
+                                    overflow: hidden;
+                                    float: right;
+                                      }
+            
+                        
+                            }
+
+                    
